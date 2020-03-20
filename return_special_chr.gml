@@ -90,6 +90,9 @@ switch argument0
     if keyboard_check(vk_shift)
         return "!";
     else break;
+    //shift, ctrl, tab, alt with right side
+    case 164: case 16: case 9: case 162: case 163:
+    return -1;
     default:
     return chr(argument0);
     /*case : //I can only input these using FN button on my keyboard
